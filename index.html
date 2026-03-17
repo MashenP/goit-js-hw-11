@@ -3,27 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>js-hw-10</title>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/styles-DQW5Cuej.css">
+    <title>js-hw-11</title>
+    <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-B7mYVNgO.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-CXh9fJFm.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-DzORb5ck.css">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link {=$highlight-act}" href="./1-timer.html"
-                >Timer</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {=$highlight-curr}" href="./2-snackbar.html"
-                >Snackbar</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <form class="form">
+      <label>
+        <input
+          type="text"
+          name="search-text"
+          placeholder="Search images..."
+          required
+        />
+      </label>
+      <button type="submit">Search</button>
+    </form>
+    <span class="loader is hidden"></span>
+
+    <ul class="gallery"></ul>
   </body>
 </html>
