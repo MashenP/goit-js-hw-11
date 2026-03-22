@@ -30,6 +30,7 @@ form.addEventListener("submit", event => {
       if (!data.hits || data.hits.length === 0) {
         iziToast.error({
           message: "Sorry, there are no images matching your search query. Please try again!",
+          position: 'topRight',
         });
         return;
       }
@@ -38,7 +39,10 @@ form.addEventListener("submit", event => {
     })
     .catch(error => {
       console.error(error);
-      iziToast.error({ message: "Error loading images" });
+      iziToast.error({
+        message: "Error loading images", 
+        position: 'topRight',
+      });
     })
     .finally(() => {
       hideLoader();
